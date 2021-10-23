@@ -1,0 +1,108 @@
+{"frames": [
+
+{
+	"filename": "1",
+	"frame": {"x":2,"y":386,"w":83,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":83,"h":62},
+	"sourceSize": {"w":83,"h":62}
+},
+{
+	"filename": "2",
+	"frame": {"x":87,"y":194,"w":83,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":83,"h":62},
+	"sourceSize": {"w":83,"h":62}
+},
+{
+	"filename": "3",
+	"frame": {"x":2,"y":194,"w":83,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":83,"h":62},
+	"sourceSize": {"w":83,"h":62}
+},
+{
+	"filename": "4",
+	"frame": {"x":87,"y":130,"w":83,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":83,"h":62},
+	"sourceSize": {"w":83,"h":62}
+},
+{
+	"filename": "5",
+	"frame": {"x":2,"y":130,"w":83,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":83,"h":62},
+	"sourceSize": {"w":83,"h":62}
+},
+{
+	"filename": "6",
+	"frame": {"x":87,"y":66,"w":83,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":83,"h":62},
+	"sourceSize": {"w":83,"h":62}
+},
+{
+	"filename": "7",
+	"frame": {"x":2,"y":66,"w":83,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":83,"h":62},
+	"sourceSize": {"w":83,"h":62}
+},
+{
+	"filename": "8",
+	"frame": {"x":87,"y":2,"w":83,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":83,"h":62},
+	"sourceSize": {"w":83,"h":62}
+},
+{
+	"filename": "9",
+	"frame": {"x":2,"y":2,"w":83,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":83,"h":62},
+	"sourceSize": {"w":83,"h":62}
+},
+{
+	"filename": "10",
+	"frame": {"x":2,"y":322,"w":83,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":83,"h":62},
+	"sourceSize": {"w":83,"h":62}
+},
+{
+	"filename": "11",
+	"frame": {"x":87,"y":258,"w":83,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":83,"h":62},
+	"sourceSize": {"w":83,"h":62}
+},
+{
+	"filename": "12",
+	"frame": {"x":2,"y":258,"w":83,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":83,"h":62},
+	"sourceSize": {"w":83,"h":62}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "AC-Animated.png",
+	"format": "RGBA8888",
+	"size": {"w":256,"h":512},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7e3af8c652d1b0cc6a4a33c63222d89a:1/1$"
+}
+}

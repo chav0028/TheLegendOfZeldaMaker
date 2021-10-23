@@ -1,0 +1,1413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Examples\AudioExample\AudioExample.h" />
+    <ClInclude Include="..\..\..\Examples\ButtonExample\ButtonExample.h" />
+    <ClInclude Include="..\..\..\Examples\CameraExample\CameraExample.h" />
+    <ClInclude Include="..\..\..\Examples\Examples.h" />
+    <ClInclude Include="..\..\..\Examples\LabelExample\LabelExample.h" />
+    <ClInclude Include="..\..\..\Examples\PrimitivesExample\PrimitivesExample.h" />
+    <ClInclude Include="..\..\..\Examples\SpriteExample\SpriteExample.h" />
+    <ClInclude Include="..\..\..\Game\Game.h" />
+    <ClInclude Include="..\..\..\Game\HeadsUpDisplay.h" />
+    <ClInclude Include="..\..\..\Game\HeroProjectile.h" />
+    <ClInclude Include="..\..\..\Game\LevelEditor\LevelEditor.h" />
+    <ClInclude Include="..\..\..\Game\LevelEditor\SubSectionMenu.h" />
+    <ClInclude Include="..\..\..\Game\Menus\MainMenu.h" />
+    <ClInclude Include="..\..\..\Game\Menus\Menu.h" />
+    <ClInclude Include="..\..\..\Game\Menus\Splash.h" />
+    <ClInclude Include="..\..\..\Game\PathFinding\PathFinder.h" />
+    <ClInclude Include="..\..\..\Game\PathFinding\PathNode.h" />
+    <ClInclude Include="..\..\..\Game\Pickups\BlueRupeePickup.h" />
+    <ClInclude Include="..\..\..\Game\Pickups\GreenRupeePickup.h" />
+    <ClInclude Include="..\..\..\Game\Pickups\HeartPickup.h" />
+    <ClInclude Include="..\..\..\Game\Pickups\Pickup.h" />
+    <ClInclude Include="..\..\..\Game\Player\Enemy.h" />
+    <ClInclude Include="..\..\..\Game\Player\Hero.h" />
+    <ClInclude Include="..\..\..\Game\Player\Player.h" />
+    <ClInclude Include="..\..\..\Game\Projectile.h" />
+    <ClInclude Include="..\..\..\Game\Pool.h" />
+    <ClInclude Include="..\..\..\Game\SubSection.h" />
+    <ClInclude Include="..\..\..\Game\Tiles\BoulderTile.h" />
+    <ClInclude Include="..\..\..\Game\Tiles\BridgeTile.h" />
+    <ClInclude Include="..\..\..\Game\Tiles\FireTile.h" />
+    <ClInclude Include="..\..\..\Game\Tiles\GroundTile.h" />
+    <ClInclude Include="..\..\..\Game\Tiles\RockTile.h" />
+    <ClInclude Include="..\..\..\Game\Tiles\SandTile.h" />
+    <ClInclude Include="..\..\..\Game\Tiles\Tile.h" />
+    <ClInclude Include="..\..\..\Game\Tiles\TreeTile.h" />
+    <ClInclude Include="..\..\..\Game\Tiles\WaterTile.h" />
+    <ClInclude Include="..\..\..\Game\World.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Box2D.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Collision\b2BroadPhase.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Collision\b2Collision.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Collision\b2Distance.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Collision\b2DynamicTree.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Collision\b2TimeOfImpact.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Collision\Shapes\b2ChainShape.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Collision\Shapes\b2CircleShape.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Collision\Shapes\b2EdgeShape.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Collision\Shapes\b2PolygonShape.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Collision\Shapes\b2Shape.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Common\b2BlockAllocator.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Common\b2Draw.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Common\b2GrowableStack.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Common\b2Math.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Common\b2Settings.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Common\b2StackAllocator.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Common\b2Timer.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\b2Body.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\b2ContactManager.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\b2Fixture.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\b2Island.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\b2TimeStep.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\b2World.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\b2WorldCallbacks.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Contacts\b2ChainAndCircleContact.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Contacts\b2ChainAndPolygonContact.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Contacts\b2CircleContact.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Contacts\b2Contact.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Contacts\b2ContactSolver.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Contacts\b2EdgeAndCircleContact.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Contacts\b2EdgeAndPolygonContact.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Contacts\b2PolygonAndCircleContact.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Contacts\b2PolygonContact.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2DistanceJoint.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2FrictionJoint.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2GearJoint.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2Joint.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2MouseJoint.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2PrismaticJoint.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2PulleyJoint.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2RevoluteJoint.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2RopeJoint.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2WeldJoint.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2WheelJoint.h" />
+    <ClInclude Include="..\..\..\Libraries\box2d\Rope\b2Rope.h" />
+    <ClInclude Include="..\..\..\Libraries\fmod\include\fmod.h" />
+    <ClInclude Include="..\..\..\Libraries\fmod\include\fmod.hpp" />
+    <ClInclude Include="..\..\..\Libraries\fmod\include\fmodiphone.h" />
+    <ClInclude Include="..\..\..\Libraries\fmod\include\fmod_codec.h" />
+    <ClInclude Include="..\..\..\Libraries\fmod\include\fmod_dsp.h" />
+    <ClInclude Include="..\..\..\Libraries\fmod\include\fmod_errors.h" />
+    <ClInclude Include="..\..\..\Libraries\fmod\include\fmod_memoryinfo.h" />
+    <ClInclude Include="..\..\..\Libraries\fmod\include\fmod_output.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\config\ftconfig.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\config\ftheader.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\config\ftmodule.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\config\ftoption.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\config\ftstdlib.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\freetype.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftadvanc.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftautoh.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftbbox.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftbdf.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftbitmap.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftbzip2.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftcache.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftcffdrv.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftchapters.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftcid.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\fterrdef.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\fterrors.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftgasp.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftglyph.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftgxval.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftgzip.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftimage.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftincrem.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftlcdfil.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftlist.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftlzw.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftmac.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftmm.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftmodapi.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftmoderr.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftotval.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftoutln.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftpfr.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftrender.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftsizes.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftsnames.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftstroke.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftsynth.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftsystem.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\fttrigon.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftttdrv.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\fttypes.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftwinfnt.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ftxf86.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\autohint.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\ftcalc.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\ftdebug.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\ftdriver.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\ftgloadr.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\ftmemory.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\ftobjs.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\ftpic.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\ftrfork.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\ftserv.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\ftstream.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\fttrace.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\ftvalid.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\internal.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\psaux.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\pshints.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\services\svbdf.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\services\svcid.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\services\svgldict.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\services\svgxval.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\services\svkern.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\services\svmm.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\services\svotval.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\services\svpfr.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\services\svpostnm.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\services\svprop.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\services\svpscmap.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\services\svpsinfo.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\services\svsfnt.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\services\svttcmap.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\services\svtteng.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\services\svttglyf.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\services\svwinfnt.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\services\svxf86nm.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\sfnt.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\t1types.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\internal\tttypes.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\t1tables.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ttnameid.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\tttables.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\tttags.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\freetype2\ttunpat.h" />
+    <ClInclude Include="..\..\..\Libraries\freetype\include\ft2build.h" />
+    <ClInclude Include="..\..\..\Libraries\glm\common.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\func_common.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\func_exponential.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\func_geometric.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\func_integer.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\func_matrix.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\func_noise.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\func_packing.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\func_trigonometric.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\func_vector_relational.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\hint.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\intrinsic_common.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\intrinsic_exponential.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\intrinsic_geometric.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\intrinsic_integer.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\intrinsic_matrix.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\intrinsic_trigonometric.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\intrinsic_vector_relational.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\precision.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\setup.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_float.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_gentype.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_half.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_int.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_mat.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_mat2x2.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_mat2x3.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_mat2x4.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_mat3x2.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_mat3x3.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_mat3x4.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_mat4x2.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_mat4x3.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_mat4x4.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_vec.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_vec1.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_vec2.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_vec3.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\type_vec4.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\_features.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\_fixes.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\_literals.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\_noise.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\_swizzle.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\_swizzle_func.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\detail\_vectorize.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\exponential.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\ext.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\fwd.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\geometric.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\glm.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtc\constants.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtc\epsilon.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtc\matrix_access.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtc\matrix_integer.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtc\matrix_inverse.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtc\matrix_transform.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtc\noise.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtc\packing.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtc\quaternion.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtc\random.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtc\reciprocal.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtc\type_precision.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtc\type_ptr.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtc\ulp.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\associated_min_max.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\bit.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\closest_point.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\color_space.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\color_space_YCoCg.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\compatibility.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\component_wise.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\constants.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\dual_quaternion.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\epsilon.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\euler_angles.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\extend.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\extented_min_max.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\fast_exponential.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\fast_square_root.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\fast_trigonometry.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\gradient_paint.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\handed_coordinate_space.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\inertia.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\integer.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\intersect.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\int_10_10_10_2.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\io.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\log_base.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\matrix_cross_product.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\matrix_interpolation.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\matrix_major_storage.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\matrix_operation.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\matrix_query.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\mixed_product.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\multiple.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\noise.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\norm.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\normal.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\normalize_dot.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\number_precision.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\optimum_pow.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\orthonormalize.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\perpendicular.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\polar_coordinates.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\projection.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\quaternion.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\random.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\raw_data.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\reciprocal.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\rotate_normalized_axis.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\rotate_vector.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\scalar_relational.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\simd_mat4.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\simd_quat.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\simd_vec4.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\spline.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\std_based_type.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\string_cast.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\transform.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\transform2.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\ulp.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\unsigned_int.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\vec1.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\vector_angle.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\vector_query.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\gtx\wrap.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\integer.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\mat2x2.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\mat2x3.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\mat2x4.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\mat3x2.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\mat3x3.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\mat3x4.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\mat4x2.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\mat4x3.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\mat4x4.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\matrix.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\packing.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\trigonometric.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\vec2.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\vec3.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\vec4.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\vector_relational.hpp" />
+    <ClInclude Include="..\..\..\Libraries\glm\virtrev\xstream.hpp" />
+    <ClInclude Include="..\..\..\Libraries\jsoncpp\autolink.h" />
+    <ClInclude Include="..\..\..\Libraries\jsoncpp\config.h" />
+    <ClInclude Include="..\..\..\Libraries\jsoncpp\features.h" />
+    <ClInclude Include="..\..\..\Libraries\jsoncpp\forwards.h" />
+    <ClInclude Include="..\..\..\Libraries\jsoncpp\json.h" />
+    <ClInclude Include="..\..\..\Libraries\jsoncpp\json_batchallocator.h" />
+    <ClInclude Include="..\..\..\Libraries\jsoncpp\reader.h" />
+    <ClInclude Include="..\..\..\Libraries\jsoncpp\value.h" />
+    <ClInclude Include="..\..\..\Libraries\jsoncpp\writer.h" />
+    <ClInclude Include="..\..\..\Libraries\libpng\png.h" />
+    <ClInclude Include="..\..\..\Libraries\libpng\pngconf.h" />
+    <ClInclude Include="..\..\..\Libraries\libpng\pngdebug.h" />
+    <ClInclude Include="..\..\..\Libraries\libpng\pnginfo.h" />
+    <ClInclude Include="..\..\..\Libraries\libpng\pnglibconf.h" />
+    <ClInclude Include="..\..\..\Libraries\libpng\pngpriv.h" />
+    <ClInclude Include="..\..\..\Libraries\libpng\pngstruct.h" />
+    <ClInclude Include="..\..\..\Libraries\memtrack\MemTrack.h" />
+    <ClInclude Include="..\..\..\Libraries\rapidxml\rapidxml.hpp" />
+    <ClInclude Include="..\..\..\Libraries\rapidxml\rapidxml_iterators.hpp" />
+    <ClInclude Include="..\..\..\Libraries\rapidxml\rapidxml_print.hpp" />
+    <ClInclude Include="..\..\..\Libraries\rapidxml\rapidxml_utils.hpp" />
+    <ClInclude Include="..\..\..\Libraries\zlib\crc32.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\deflate.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\gzguts.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\inffast.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\inffixed.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\inflate.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\inftrees.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\trees.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\zconf.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\zlib.h" />
+    <ClInclude Include="..\..\..\Libraries\zlib\zutil.h" />
+    <ClInclude Include="..\..\..\Source\Animation\Easing.h" />
+    <ClInclude Include="..\..\..\Source\Animation\Random.h" />
+    <ClInclude Include="..\..\..\Source\Animation\Timer.h" />
+    <ClInclude Include="..\..\..\Source\Animation\Tween.h" />
+    <ClInclude Include="..\..\..\Source\Audio\Audio.h" />
+    <ClInclude Include="..\..\..\Source\Core\BaseObject.h" />
+    <ClInclude Include="..\..\..\Source\Core\GameObject.h" />
+    <ClInclude Include="..\..\..\Source\Core\Scene.h" />
+    <ClInclude Include="..\..\..\Source\Events\Event.h" />
+    <ClInclude Include="..\..\..\Source\Events\EventDispatcher.h" />
+    <ClInclude Include="..\..\..\Source\Events\EventHandler.h" />
+    <ClInclude Include="..\..\..\Source\Events\Input\AccelerometerEvent.h" />
+    <ClInclude Include="..\..\..\Source\Events\Input\ControllerEvent.h" />
+    <ClInclude Include="..\..\..\Source\Events\Input\GyroscopeEvent.h" />
+    <ClInclude Include="..\..\..\Source\Events\Input\InputEvents.h" />
+    <ClInclude Include="..\..\..\Source\Events\Input\KeyEvent.h" />
+    <ClInclude Include="..\..\..\Source\Events\Input\MouseClickEvent.h" />
+    <ClInclude Include="..\..\..\Source\Events\Input\MouseMovementEvent.h" />
+    <ClInclude Include="..\..\..\Source\Events\Input\MouseScrollWheelEvent.h" />
+    <ClInclude Include="..\..\..\Source\Events\Input\TouchEvent.h" />
+    <ClInclude Include="..\..\..\Source\Events\Platform\FullscreenEvent.h" />
+    <ClInclude Include="..\..\..\Source\Events\Platform\OrientationChangedEvent.h" />
+    <ClInclude Include="..\..\..\Source\Events\Platform\ResizeEvent.h" />
+    <ClInclude Include="..\..\..\Source\FrameworkConfig.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Core\Camera.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Core\Color.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Core\FrameBuffer.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Core\RenderTarget.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Core\Shader.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Fonts\BitmapFont.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Fonts\Font.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Fonts\TrueTypeFont.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Graphics.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\OpenGL.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Primitives\Circle.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Primitives\Line.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Primitives\Point.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Primitives\Polygon.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Primitives\Primitives.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Primitives\Rect.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Textures\Texture.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Textures\TextureFrame.h" />
+    <ClInclude Include="..\..\..\Source\Input\Controller\ControllerData.h" />
+    <ClInclude Include="..\..\..\Source\Input\Controller\ControllerGeneric.h" />
+    <ClInclude Include="..\..\..\Source\Input\Controller\ControllerPS3.h" />
+    <ClInclude Include="..\..\..\Source\Input\Controller\ControllerXbox360.h" />
+    <ClInclude Include="..\..\..\Source\Input\KeyCodes.h" />
+    <ClInclude Include="..\..\..\Source\Input\KeyData.h" />
+    <ClInclude Include="..\..\..\Source\Input\MouseData.h" />
+    <ClInclude Include="..\..\..\Source\Input\TouchData.h" />
+    <ClInclude Include="..\..\..\Source\IO\File.h" />
+    <ClInclude Include="..\..\..\Source\Physics\Box2D\b2DebugDraw.h" />
+    <ClInclude Include="..\..\..\Source\Physics\Box2D\b2Helper.h" />
+    <ClInclude Include="..\..\..\Source\Platforms\PlatformLayer.h" />
+    <ClInclude Include="..\..\..\Source\Platforms\PlatformMacros.h" />
+    <ClInclude Include="..\..\..\Source\Platforms\Windows\App\GameWindow.h" />
+    <ClInclude Include="..\..\..\Source\Platforms\Windows\App\OpenGL\glext.h" />
+    <ClInclude Include="..\..\..\Source\Platforms\Windows\App\OpenGL\OpenGLExtensions.h" />
+    <ClInclude Include="..\..\..\Source\Platforms\Windows\App\OpenGL\wglext.h" />
+    <ClInclude Include="..\..\..\Source\Platforms\Windows\App\stdafx.h" />
+    <ClInclude Include="..\..\..\Source\Platforms\Windows\Platform_Windows.h" />
+    <ClInclude Include="..\..\..\Source\Services\AudioManager\AudioManager.h" />
+    <ClInclude Include="..\..\..\Source\Services\DebugUI\DebugUI.h" />
+    <ClInclude Include="..\..\..\Source\Services\FontManager\FontManager.h" />
+    <ClInclude Include="..\..\..\Source\Services\GameService.h" />
+    <ClInclude Include="..\..\..\Source\Services\Graphics\Graphics.h" />
+    <ClInclude Include="..\..\..\Source\Services\InputManager\InputManager.h" />
+    <ClInclude Include="..\..\..\Source\Services\LoadingUI\LoadingUI.h" />
+    <ClInclude Include="..\..\..\Source\Services\SceneManager\SceneManager.h" />
+    <ClInclude Include="..\..\..\Source\Services\ServiceLocator.h" />
+    <ClInclude Include="..\..\..\Source\Services\ShaderManager\ShaderManager.h" />
+    <ClInclude Include="..\..\..\Source\Services\TextureManager\TextureManager.h" />
+    <ClInclude Include="..\..\..\Source\UI\Button\Button.h" />
+    <ClInclude Include="..\..\..\Source\UI\Button\ButtonList.h" />
+    <ClInclude Include="..\..\..\Source\UI\Label\Label.h" />
+    <ClInclude Include="..\..\..\Source\UI\Sprite\Sprite.h" />
+    <ClInclude Include="..\..\..\Source\UI\UI.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Examples\AudioExample\AudioExample.cpp" />
+    <ClCompile Include="..\..\..\Examples\ButtonExample\ButtonExample.cpp" />
+    <ClCompile Include="..\..\..\Examples\CameraExample\CameraExample.cpp" />
+    <ClCompile Include="..\..\..\Examples\LabelExample\LabelExample.cpp" />
+    <ClCompile Include="..\..\..\Examples\PrimitivesExample\PrimitivesExample.cpp" />
+    <ClCompile Include="..\..\..\Examples\SpriteExample\SpriteExample.cpp" />
+    <ClCompile Include="..\..\..\Game\Game.cpp" />
+    <ClCompile Include="..\..\..\Game\HeadsUpDisplay.cpp" />
+    <ClCompile Include="..\..\..\Game\HeroProjectile.cpp" />
+    <ClCompile Include="..\..\..\Game\LevelEditor\LevelEditor.cpp" />
+    <ClCompile Include="..\..\..\Game\LevelEditor\SubSectionMenu.cpp" />
+    <ClCompile Include="..\..\..\Game\Menus\MainMenu.cpp" />
+    <ClCompile Include="..\..\..\Game\Menus\Menu.cpp" />
+    <ClCompile Include="..\..\..\Game\Menus\Splash.cpp" />
+    <ClCompile Include="..\..\..\Game\PathFinding\PathFinder.cpp" />
+    <ClCompile Include="..\..\..\Game\PathFinding\PathNode.cpp" />
+    <ClCompile Include="..\..\..\Game\Pickups\BlueRupeePickup.cpp" />
+    <ClCompile Include="..\..\..\Game\Pickups\GreenRupeePickup.cpp" />
+    <ClCompile Include="..\..\..\Game\Pickups\HeartPickup.cpp" />
+    <ClCompile Include="..\..\..\Game\Pickups\Pickup.cpp" />
+    <ClCompile Include="..\..\..\Game\Player\Enemy.cpp" />
+    <ClCompile Include="..\..\..\Game\Player\Hero.cpp" />
+    <ClCompile Include="..\..\..\Game\Player\Player.cpp" />
+    <ClCompile Include="..\..\..\Game\Projectile.cpp" />
+    <ClCompile Include="..\..\..\Game\SubSection.cpp" />
+    <ClCompile Include="..\..\..\Game\Tiles\BoulderTile.cpp" />
+    <ClCompile Include="..\..\..\Game\Tiles\BridgeTile.cpp" />
+    <ClCompile Include="..\..\..\Game\Tiles\FireTile.cpp" />
+    <ClCompile Include="..\..\..\Game\Tiles\GroundTile.cpp" />
+    <ClCompile Include="..\..\..\Game\Tiles\RockTile.cpp" />
+    <ClCompile Include="..\..\..\Game\Tiles\SandTile.cpp" />
+    <ClCompile Include="..\..\..\Game\Tiles\Tile.cpp" />
+    <ClCompile Include="..\..\..\Game\Tiles\TreeTile.cpp" />
+    <ClCompile Include="..\..\..\Game\Tiles\WaterTile.cpp" />
+    <ClCompile Include="..\..\..\Game\World.cpp" />
+    <ClCompile Include="..\..\..\Libraries\box2d\Collision\b2BroadPhase.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Collision\b2CollideCircle.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Collision\b2CollideEdge.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Collision\b2CollidePolygon.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Collision\b2Collision.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Collision\b2Distance.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Collision\b2DynamicTree.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Collision\b2TimeOfImpact.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Collision\Shapes\b2ChainShape.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Collision\Shapes\b2CircleShape.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Collision\Shapes\b2EdgeShape.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Collision\Shapes\b2PolygonShape.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Common\b2BlockAllocator.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Common\b2Draw.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Common\b2Math.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Common\b2Settings.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Common\b2StackAllocator.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Common\b2Timer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\b2Body.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\b2ContactManager.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\b2Fixture.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\b2Island.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\b2World.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\b2WorldCallbacks.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Contacts\b2ChainAndCircleContact.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Contacts\b2ChainAndPolygonContact.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Contacts\b2CircleContact.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Contacts\b2Contact.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Contacts\b2ContactSolver.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Contacts\b2EdgeAndCircleContact.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Contacts\b2EdgeAndPolygonContact.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Contacts\b2PolygonAndCircleContact.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Contacts\b2PolygonContact.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2DistanceJoint.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2FrictionJoint.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2GearJoint.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2Joint.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2MouseJoint.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2PrismaticJoint.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2PulleyJoint.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2RevoluteJoint.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2RopeJoint.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2WeldJoint.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Dynamics\Joints\b2WheelJoint.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\box2d\Rope\b2Rope.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\glm\detail\dummy.cpp" />
+    <ClCompile Include="..\..\..\Libraries\glm\detail\glm.cpp" />
+    <ClCompile Include="..\..\..\Libraries\jsoncpp\json_reader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\jsoncpp\json_value.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\jsoncpp\json_writer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\png.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngerror.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngget.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngmem.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngpread.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngread.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngrio.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngrtran.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngrutil.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngset.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngtrans.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngwio.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngwrite.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngwtran.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\libpng\pngwutil.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\memtrack\MemTrack.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\adler32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\compress.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\crc32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\deflate.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\gzclose.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\gzlib.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\gzread.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\gzwrite.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\infback.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\inffast.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\inflate.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\inftrees.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\trees.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\uncompr.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\zlib\zutil.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Animation\Easing.cpp" />
+    <ClCompile Include="..\..\..\Source\Animation\Random.cpp" />
+    <ClCompile Include="..\..\..\Source\Animation\Timer.cpp" />
+    <ClCompile Include="..\..\..\Source\Animation\Tween.cpp" />
+    <ClCompile Include="..\..\..\Source\Audio\Audio.cpp" />
+    <ClCompile Include="..\..\..\Source\Core\BaseObject.cpp" />
+    <ClCompile Include="..\..\..\Source\Core\GameObject.cpp" />
+    <ClCompile Include="..\..\..\Source\Core\Scene.cpp" />
+    <ClCompile Include="..\..\..\Source\Events\Event.cpp" />
+    <ClCompile Include="..\..\..\Source\Events\EventDispatcher.cpp" />
+    <ClCompile Include="..\..\..\Source\Events\EventHandler.cpp" />
+    <ClCompile Include="..\..\..\Source\Events\Input\AccelerometerEvent.cpp" />
+    <ClCompile Include="..\..\..\Source\Events\Input\ControllerEvent.cpp" />
+    <ClCompile Include="..\..\..\Source\Events\Input\GyroscopeEvent.cpp" />
+    <ClCompile Include="..\..\..\Source\Events\Input\KeyEvent.cpp" />
+    <ClCompile Include="..\..\..\Source\Events\Input\MouseClickEvent.cpp" />
+    <ClCompile Include="..\..\..\Source\Events\Input\MouseMovementEvent.cpp" />
+    <ClCompile Include="..\..\..\Source\Events\Input\MouseScrollWheelEvent.cpp" />
+    <ClCompile Include="..\..\..\Source\Events\Input\TouchEvent.cpp" />
+    <ClCompile Include="..\..\..\Source\Events\Platform\FullscreenEvent.cpp" />
+    <ClCompile Include="..\..\..\Source\Events\Platform\OrientationChangedEvent.cpp" />
+    <ClCompile Include="..\..\..\Source\Events\Platform\ResizeEvent.cpp" />
+    <ClCompile Include="..\..\..\Source\Graphics\Core\Camera.cpp" />
+    <ClCompile Include="..\..\..\Source\Graphics\Core\Color.cpp" />
+    <ClCompile Include="..\..\..\Source\Graphics\Core\RenderTarget.cpp" />
+    <ClCompile Include="..\..\..\Source\Graphics\Core\Shader.cpp" />
+    <ClCompile Include="..\..\..\Source\Graphics\Fonts\BitmapFont.cpp" />
+    <ClCompile Include="..\..\..\Source\Graphics\Fonts\Font.cpp" />
+    <ClCompile Include="..\..\..\Source\Graphics\Fonts\TrueTypeFont.cpp" />
+    <ClCompile Include="..\..\..\Source\Graphics\Primitives\Circle.cpp" />
+    <ClCompile Include="..\..\..\Source\Graphics\Primitives\Line.cpp" />
+    <ClCompile Include="..\..\..\Source\Graphics\Primitives\Point.cpp" />
+    <ClCompile Include="..\..\..\Source\Graphics\Primitives\Polygon.cpp" />
+    <ClCompile Include="..\..\..\Source\Graphics\Primitives\Rect.cpp" />
+    <ClCompile Include="..\..\..\Source\Graphics\Textures\Texture.cpp" />
+    <ClCompile Include="..\..\..\Source\Graphics\Textures\TextureFrame.cpp" />
+    <ClCompile Include="..\..\..\Source\Input\Controller\ControllerData.cpp" />
+    <ClCompile Include="..\..\..\Source\Input\Controller\ControllerGeneric.cpp" />
+    <ClCompile Include="..\..\..\Source\Input\Controller\ControllerPS3.cpp" />
+    <ClCompile Include="..\..\..\Source\Input\Controller\ControllerXbox360.cpp" />
+    <ClCompile Include="..\..\..\Source\Input\KeyData.cpp" />
+    <ClCompile Include="..\..\..\Source\Input\MouseData.cpp" />
+    <ClCompile Include="..\..\..\Source\Input\TouchData.cpp" />
+    <ClCompile Include="..\..\..\Source\IO\File.cpp" />
+    <ClCompile Include="..\..\..\Source\Physics\Box2D\b2DebugDraw.cpp" />
+    <ClCompile Include="..\..\..\Source\Physics\Box2D\b2Helper.cpp" />
+    <ClCompile Include="..\..\..\Source\Platforms\PlatformLayer.cpp" />
+    <ClCompile Include="..\..\..\Source\Platforms\Windows\App\GameWindow.cpp" />
+    <ClCompile Include="..\..\..\Source\Platforms\Windows\App\OpenGL\OpenGLExtensions.cpp" />
+    <ClCompile Include="..\..\..\Source\Platforms\Windows\App\stdafx.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Platforms\Windows\App\WinMain.cpp" />
+    <ClCompile Include="..\..\..\Source\Platforms\Windows\Platform_Windows.cpp" />
+    <ClCompile Include="..\..\..\Source\Services\AudioManager\AudioManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Services\DebugUI\DebugUI.cpp" />
+    <ClCompile Include="..\..\..\Source\Services\FontManager\FontManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Services\GameService.cpp" />
+    <ClCompile Include="..\..\..\Source\Services\Graphics\Graphics.cpp" />
+    <ClCompile Include="..\..\..\Source\Services\InputManager\InputManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Services\LoadingUI\LoadingUI.cpp" />
+    <ClCompile Include="..\..\..\Source\Services\SceneManager\SceneManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Services\ServiceLocator.cpp" />
+    <ClCompile Include="..\..\..\Source\Services\ShaderManager\ShaderManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Services\TextureManager\TextureManager.cpp" />
+    <ClCompile Include="..\..\..\Source\UI\Button\Button.cpp" />
+    <ClCompile Include="..\..\..\Source\UI\Button\ButtonList.cpp" />
+    <ClCompile Include="..\..\..\Source\UI\Label\Label.cpp" />
+    <ClCompile Include="..\..\..\Source\UI\Sprite\Sprite.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Assets\Shaders\passThrough-tex.fsh" />
+    <None Include="..\..\..\Assets\Shaders\passThrough-tex.vsh" />
+    <None Include="..\..\..\Assets\Shaders\passThrough.fsh" />
+    <None Include="..\..\..\Assets\Shaders\passThrough.vsh" />
+    <None Include="..\..\..\Libraries\glm\detail\func_common.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\func_exponential.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\func_geometric.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\func_integer.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\func_matrix.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\func_noise.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\func_packing.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\func_trigonometric.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\func_vector_relational.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\intrinsic_common.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\intrinsic_exponential.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\intrinsic_geometric.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\intrinsic_integer.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\intrinsic_matrix.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\intrinsic_trigonometric.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\intrinsic_vector_relational.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\precision.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\type_gentype.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\type_half.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\type_mat.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\type_mat2x2.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\type_mat2x3.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\type_mat2x4.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\type_mat3x2.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\type_mat3x3.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\type_mat3x4.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\type_mat4x2.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\type_mat4x3.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\type_mat4x4.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\type_vec.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\type_vec1.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\type_vec2.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\type_vec3.inl" />
+    <None Include="..\..\..\Libraries\glm\detail\type_vec4.inl" />
+    <None Include="..\..\..\Libraries\glm\gtc\constants.inl" />
+    <None Include="..\..\..\Libraries\glm\gtc\epsilon.inl" />
+    <None Include="..\..\..\Libraries\glm\gtc\matrix_access.inl" />
+    <None Include="..\..\..\Libraries\glm\gtc\matrix_inverse.inl" />
+    <None Include="..\..\..\Libraries\glm\gtc\matrix_transform.inl" />
+    <None Include="..\..\..\Libraries\glm\gtc\noise.inl" />
+    <None Include="..\..\..\Libraries\glm\gtc\packing.inl" />
+    <None Include="..\..\..\Libraries\glm\gtc\quaternion.inl" />
+    <None Include="..\..\..\Libraries\glm\gtc\random.inl" />
+    <None Include="..\..\..\Libraries\glm\gtc\reciprocal.inl" />
+    <None Include="..\..\..\Libraries\glm\gtc\type_precision.inl" />
+    <None Include="..\..\..\Libraries\glm\gtc\type_ptr.inl" />
+    <None Include="..\..\..\Libraries\glm\gtc\ulp.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\associated_min_max.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\bit.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\closest_point.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\color_space.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\color_space_YCoCg.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\compatibility.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\component_wise.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\dual_quaternion.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\euler_angles.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\extend.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\extented_min_max.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\fast_exponential.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\fast_square_root.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\fast_trigonometry.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\gradient_paint.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\handed_coordinate_space.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\inertia.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\integer.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\intersect.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\int_10_10_10_2.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\io.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\log_base.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\matrix_cross_product.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\matrix_interpolation.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\matrix_major_storage.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\matrix_operation.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\matrix_query.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\mixed_product.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\multiple.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\norm.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\normal.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\normalize_dot.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\number_precision.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\optimum_pow.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\orthonormalize.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\perpendicular.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\polar_coordinates.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\projection.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\quaternion.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\raw_data.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\rotate_normalized_axis.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\rotate_vector.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\scalar_relational.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\simd_mat4.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\simd_quat.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\simd_vec4.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\spline.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\std_based_type.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\string_cast.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\transform.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\transform2.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\unsigned_int.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\vec1.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\vector_angle.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\vector_query.inl" />
+    <None Include="..\..\..\Libraries\glm\gtx\wrap.inl" />
+    <None Include="..\..\..\Libraries\jsoncpp\json_internalarray.inl" />
+    <None Include="..\..\..\Libraries\jsoncpp\json_internalmap.inl" />
+    <None Include="..\..\..\Libraries\jsoncpp\json_valueiterator.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="..\..\..\Source\Platforms\Windows\App\DeclareDPIAware.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5B4F3AE6-46CD-46D8-BB74-330F3B13576B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameDev2D</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(USERPROFILE)\Desktop\Builds\$(TargetName)\$(Configuration)\</OutDir>
+    <IntDir>$(USERPROFILE)\Desktop\Intermediate Files\$(TargetName)\$(Configuration)\</IntDir>
+    <IncludePath>$(MSBuildProjectDirectory)\..\..\..\Libraries\glm\;$(MSBuildProjectDirectory)\..\..\..\Libraries\glm\detail\;$(MSBuildProjectDirectory)\..\..\..\Libraries\glm\gtc\;$(MSBuildProjectDirectory)\..\..\..\Libraries\glm\gtx\;$(MSBuildProjectDirectory)\..\..\..\Libraries\glm\virtrev\;$(MSBuildProjectDirectory)\..\..\..\Libraries\libpng\;$(MSBuildProjectDirectory)\..\..\..\Libraries\zlib\;$(MSBuildProjectDirectory)\..\..\..\Libraries\rapidxml\;$(MSBuildProjectDirectory)\..\..\..\Libraries\jsoncpp\;$(MSBuildProjectDirectory)\..\..\..\Libraries\box2d\;$(MSBuildProjectDirectory)\..\..\..\Libraries\box2d\Collision\;$(MSBuildProjectDirectory)\..\..\..\Libraries\box2d\Collision\Shapes\;$(MSBuildProjectDirectory)\..\..\..\Libraries\box2d\Common\;$(MSBuildProjectDirectory)\..\..\..\Libraries\box2d\Dynamics\;$(MSBuildProjectDirectory)\..\..\..\Libraries\box2d\Dynamics\Joints\;$(MSBuildProjectDirectory)\..\..\..\Libraries\box2d\Dynamics\Contacts\;$(MSBuildProjectDirectory)\..\..\..\Libraries\box2d\Rope\;$(MSBuildProjectDirectory)\..\..\..\Libraries\fmod\include\;$(MSBuildProjectDirectory)\..\..\..\Libraries\freetype\include\;$(MSBuildProjectDirectory)\..\..\..\Libraries\freetype\include\freetype2\;$(MSBuildProjectDirectory)\..\..\..\Libraries\freetype\include\freetype2\config\;$(MSBuildProjectDirectory)\..\..\..\Libraries\freetype\include\freetype2\internal\;$(MSBuildProjectDirectory)\..\..\..\Libraries\freetype\include\freetype2\internal\services\;$(MSBuildProjectDirectory)\..\..\..\Source\;$(MSBuildProjectDirectory)\..\..\..\Source\Platforms\Windows\App\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(MSBuildProjectDirectory)\..\..\..\Libraries\freetype\lib\windows\;$(MSBuildProjectDirectory)\..\..\..\Libraries\fmod\lib\windows\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>$(MSBuildProjectDirectory)\..\..\..\Libraries\freetype\lib\windows\;$(MSBuildProjectDirectory)\..\..\..\Libraries\fmod\lib\windows\;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(MSBuildProjectDirectory)\..\..\..\Libraries\glm\;$(MSBuildProjectDirectory)\..\..\..\Libraries\glm\detail\;$(MSBuildProjectDirectory)\..\..\..\Libraries\glm\gtc\;$(MSBuildProjectDirectory)\..\..\..\Libraries\glm\gtx\;$(MSBuildProjectDirectory)\..\..\..\Libraries\glm\virtrev\;$(MSBuildProjectDirectory)\..\..\..\Libraries\libpng\;$(MSBuildProjectDirectory)\..\..\..\Libraries\zlib\;$(MSBuildProjectDirectory)\..\..\..\Libraries\rapidxml\;$(MSBuildProjectDirectory)\..\..\..\Libraries\jsoncpp\;$(MSBuildProjectDirectory)\..\..\..\Libraries\box2d\;$(MSBuildProjectDirectory)\..\..\..\Libraries\box2d\Collision\;$(MSBuildProjectDirectory)\..\..\..\Libraries\box2d\Collision\Shapes\;$(MSBuildProjectDirectory)\..\..\..\Libraries\box2d\Common\;$(MSBuildProjectDirectory)\..\..\..\Libraries\box2d\Dynamics\;$(MSBuildProjectDirectory)\..\..\..\Libraries\box2d\Dynamics\Joints\;$(MSBuildProjectDirectory)\..\..\..\Libraries\box2d\Dynamics\Contacts\;$(MSBuildProjectDirectory)\..\..\..\Libraries\box2d\Rope\;$(MSBuildProjectDirectory)\..\..\..\Libraries\fmod\include\;$(MSBuildProjectDirectory)\..\..\..\Libraries\freetype\include\;$(MSBuildProjectDirectory)\..\..\..\Libraries\freetype\include\freetype2\;$(MSBuildProjectDirectory)\..\..\..\Libraries\freetype\include\freetype2\config\;$(MSBuildProjectDirectory)\..\..\..\Libraries\freetype\include\freetype2\internal\;$(MSBuildProjectDirectory)\..\..\..\Libraries\freetype\include\freetype2\internal\services\;$(MSBuildProjectDirectory)\..\..\..\Source\;$(MSBuildProjectDirectory)\..\..\..\Source\Platforms\Windows\App\;$(IncludePath)</IncludePath>
+    <OutDir>$(USERPROFILE)\Desktop\Builds\$(TargetName)\$(Configuration)\</OutDir>
+    <IntDir>$(USERPROFILE)\Desktop\Intermediate Files\$(TargetName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;DEBUG;_WINDOWS;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_MSC_PLATFORM_TOOLSET_$(PlatformToolset);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>stdafx.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>fmodex_vc.lib;freetypeWin32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/NODEFAULTLIB:MSVCRT %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /q /y "$(ProjectDir)..\..\..\Libraries\fmod\lib\windows\fmodex.dll" "$(OutDir)"</Command>
+      <Message>Copying fmodex.dll to output directory</Message>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>xcopy /q /y /s /i "$(ProjectDir)..\..\..\Assets" "$(OutDir)\Assets"</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Copying assets to output directory</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;DEBUG;_WINDOWS;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_MSC_PLATFORM_TOOLSET_$(PlatformToolset);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>stdafx.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>fmodex_vc.lib;freetypeWin32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /q /y "$(ProjectDir)..\..\..\Libraries\fmod\lib\windows\fmodex.dll" "$(OutDir)"</Command>
+      <Message>Copying fmodex.dll to output directory</Message>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Message>Copying assets to output directory</Message>
+      <Command>xcopy /q /y /s /i "$(ProjectDir)..\..\..\Assets" "$(OutDir)\Assets"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
